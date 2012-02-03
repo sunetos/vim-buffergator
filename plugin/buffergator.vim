@@ -1047,7 +1047,6 @@ function! s:NewBufferCatalogViewer()
             noremap <buffer> <silent> X           :<C-U>call b:buffergator_catalog_viewer.delete_target(1, 1)<CR>
 
             """"" Selection: show target and switch focus
-            noremap <buffer> <silent> <CR>        :<C-U>call b:buffergator_catalog_viewer.visit_target(!g:buffergator_autodismiss_on_select, 0, "")<CR>
             noremap <buffer> <silent> o           :<C-U>call b:buffergator_catalog_viewer.visit_target(!g:buffergator_autodismiss_on_select, 0, "")<CR>
             noremap <buffer> <silent> s           :<C-U>call b:buffergator_catalog_viewer.visit_target(!g:buffergator_autodismiss_on_select, 0, "vert sb")<CR>
             noremap <buffer> <silent> i           :<C-U>call b:buffergator_catalog_viewer.visit_target(!g:buffergator_autodismiss_on_select, 0, "sb")<CR>
@@ -1079,6 +1078,7 @@ function! s:NewBufferCatalogViewer()
             noremap <buffer> <silent> es          :<C-U>call b:buffergator_catalog_viewer.visit_open_target(0, !g:buffergator_autodismiss_on_select, "vert sb")<CR>
             noremap <buffer> <silent> ei          :<C-U>call b:buffergator_catalog_viewer.visit_open_target(0, !g:buffergator_autodismiss_on_select, "sb")<CR>
             noremap <buffer> <silent> et          :<C-U>call b:buffergator_catalog_viewer.visit_open_target(0, !g:buffergator_autodismiss_on_select, "tab sb")<CR>
+            noremap <buffer> <silent> <CR>        :<C-U>call b:buffergator_catalog_viewer.visit_open_target(0, !g:buffergator_autodismiss_on_select, "tab sb")<CR>
 
         else
 
